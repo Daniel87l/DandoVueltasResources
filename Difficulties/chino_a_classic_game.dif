@@ -1,0 +1,62 @@
+{
+//this generated classic game is for version 4 of .dif
+"version": 4,
+"name": "chino_a_classic_game",
+"generator": {
+  "width": 1500,
+  "height": 1500,
+   "blocks": [
+    {
+        "name": "Floor",
+        "probability": 95
+    },
+    {
+        "name": "Block",
+        "probability": 7
+    },
+    {
+        "name": "SlimeBlock",
+        "probability": 2
+    }
+  ]
+},
+"player": {
+  "velocity": 500.0,
+  "fov": 20.0,
+  "descontrol": {
+    "velocityVariationDescontrol": 2,
+    "descontrolTime": 5.0,
+    "fovVariation": 2.0
+  },
+  "pulse":{
+    "duration":2,
+    "recoveryTime":6,
+    "energyCost":8,
+    "multiplier":1.5,
+  },
+ "energy":{
+    "maxEnergy":20,
+    "secondsPerGen":3
+  }
+},
+"spawns": [
+  {
+    "name": "Konocoin",
+    "blockTagException": ["block"],
+    "recoveryTime": 5.0,
+    "Params": null,
+    "Collisions": null
+  },
+  {
+    "name": "Spikiki",
+    "blockTagException": ["block"],
+    "recoveryTime": 15.0,
+    "Params": 
+    {
+      "velocity":"500",
+      "kisokikiBaseSpeed":"120",
+       "PlayerCollision":"game.tg.death"
+    },
+  }
+]
+}
